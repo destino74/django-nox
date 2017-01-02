@@ -1,7 +1,7 @@
-Django Account Keeping
+Django-Nox
 ======================
 
-A reusable Django app for keeping track of transactions in your bank accounts.
+Statistics middleware and analysis tools for django
 
 Installation
 ------------
