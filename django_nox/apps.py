@@ -4,4 +4,4 @@ from django.apps import AppConfig
 
 
 class NoxConfig(AppConfig):
-    name = 'nox'
+    name = 'django_nox'

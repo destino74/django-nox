@@ -1,5 +1,5 @@
 Django-Nox
-======================
+==========
 
 Statistics middleware and analysis tools for django
 
@@ -20,6 +20,15 @@ Add all relevant apps to your ``INSTALLED_APPS``
     INSTALLED_APPS = (
         ...,
         'django_nox',
+    )
+
+Add all middleware to your ``MIDDLEWARE``
+
+.. code-block:: python
+
+    MIDDLEWARE = (
+        ...,
+        'django_nox.middleware.TimeLogMiddleware'
     )
 
 Don't forget to migrate your database
@@ -44,7 +53,7 @@ Once you've installed it, the request times will be log in database, and you can
 
 
 Settings
-#########
+########
 To configured some parmas in settings.py
 
 
