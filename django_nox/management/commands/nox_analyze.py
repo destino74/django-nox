@@ -2,7 +2,7 @@ from __future__ import absolute_import
 from django.core.management.base import BaseCommand
 from texttable import Texttable
 from django.core.urlresolvers import resolve, Resolver404
-from djnox.models import LoadTimeLog
+from django_nox.models import LoadTimeLog
 
 CACHED_VIEWS = {}
 

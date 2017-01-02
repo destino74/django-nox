@@ -1,7 +1,7 @@
 from setuptools import setup, find_packages
 
 setup(name='django-nox',
-      version='0.0.2',
+      version='0.0.4',
       description='Statistics middleware and analysis tools for django',
       url='https://github.com/destino74/django-django_nox',
       author='destino74',
