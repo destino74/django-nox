@@ -43,8 +43,9 @@ Once you've installed it, the request times will be log in database, and you can
 
 
 
-Configure
+Settings
 #########
+To configured some parmas in settings.py
 
 
 NOX_SLOW_REQUEST
