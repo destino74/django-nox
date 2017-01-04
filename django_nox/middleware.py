@@ -2,10 +2,14 @@ import time
 import logging
 import json
 from django.db import connection
-from django.utils.deprecation import MiddlewareMixin
 from django.utils.encoding import smart_str
 from django.conf import settings
 from models import LoadTimeLog
+import django
+if django.get_version() > '1.10.0':
+    from django.utils.deprecation import MiddlewareMixin
+else:
+    MiddlewareMixin = object
 
 logger = logging.getLogger(__name__)
 

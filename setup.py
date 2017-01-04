@@ -1,9 +1,21 @@
 from setuptools import setup, find_packages
+import os
+import sys
+import io
+
+def read(*names, **kwargs):
+    with io.open(
+        os.path.join(os.path.dirname(__file__), *names),
+        encoding=kwargs.get("encoding", "utf8")
+    ) as fp:
+        return fp.read()
+
 
 setup(name='django-nox',
-      version='0.0.4',
+      version='0.0.1',
       description='Statistics middleware and analysis tools for django',
-      url='https://github.com/destino74/django-django_nox',
+      long_description=read('README.rst'),
+      url='https://github.com/destino74/django-nox',
       author='destino74',
       author_email='ljf6670601@gmail.com',
       license='MIT',
@@ -11,7 +23,7 @@ setup(name='django-nox',
       # packages=['django_nox', 'django_nox.migrations', 'django_nox.management', 'django_nox.management.commands'],
       install_requires=[
             'texttable',
-            'markdown',
+#            'markdown',
       ],
       classifiers=[
             "Development Status :: 3 - Alpha",
