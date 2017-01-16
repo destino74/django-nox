@@ -6,7 +6,7 @@ from django.utils.encoding import smart_str
 from django.conf import settings
 from models import LoadTimeLog
 import django
-if django.get_version() > '1.10.0':
+if django.VERSION[1] >= 10:
     from django.utils.deprecation import MiddlewareMixin
 else:
     MiddlewareMixin = object

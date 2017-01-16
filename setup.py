@@ -12,7 +12,7 @@ def read(*names, **kwargs):
 
 
 setup(name='django-nox',
-      version='0.0.1',
+      version='0.0.2',
       description='Statistics middleware and analysis tools for django',
       long_description=read('README.rst'),
       url='https://github.com/destino74/django-nox',
